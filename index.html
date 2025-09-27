@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Link of CSS files -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/flaticon.css">
+	<link rel="stylesheet" href="assets/css/remixicon.css">
+	<link rel="stylesheet" href="assets/css/fontawesome.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/odometer.min.css">
+	<link rel="stylesheet" href="assets/css/aos.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<link rel="stylesheet" href="assets/css/dark-theme.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+	<title>Art Clinic</title>
+	<meta name="description" content="At Art Clinic, we are committed to enhancing your dental health and aesthetics through a range of specialized treatments. From routine dental fillings to advanced cosmetic procedures, our goal is to create a healthy, beautiful smile. We offer expert dental nerve fillings to restore tooth function, and our cosmetic dental fillings are designed to seamlessly blend with your natural teeth. ">
+	<meta name="keywords" content="Art Clinic ">
+	<meta property="og:title" content="Art Clinic" />
+	<meta property="og:description" content="At Art Clinic, we are committed to enhancing your dental health and aesthetics through a range of specialized treatments. From routine dental fillings to advanced cosmetic procedures, our goal is to create a healthy, beautiful smile. We offer expert dental nerve fillings to restore tooth function, and our cosmetic dental fillings are designed to seamlessly blend with your natural teeth. ">
+	<link rel="icon" type="image/png" href="assets/img/Fav.png">
+	</head>
+
+<body>
+<!-- Page Wrapper End -->
+<div class="page-wrapper">
+	<!-- Header Section Start -->
+	<header class="header-wrap style1">
+		<div class="header-bottom">
+			<div class="container-fluid">
+				<nav class="navbar navbar-expand-md navbar-light">
+					<a class="navbar-brand" href="index.php"> <img class="logo-light" src="assets/img/Header.png" alt="logo"> </a>
+					<div class="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
+						<div class="menu-close d-lg-none">
+							<a href="javascript:void(0)"> <i class="ri-close-line"></i></a>
+						</div>
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item <?php if($currentPage =='home'){echo 'active';}?>"> <a href="index.php" class="nav-link ">Home</a> </li>
+							<li class="nav-item <?php if($currentPage =='about'){echo 'active';}?>"> <a href="about.php" class="nav-link"> About</a> </li>
+							<li class="nav-item <?php if($currentPage =='services'){echo 'active';}?>"> <a href="#" class="nav-link">Services<i class="ri-arrow-down-s-line"></i></a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"> <a href="dental-services.php" class="nav-link">Dental service </a> </li>
+									<li class="nav-item"> <a href="dermatology.php" class="nav-link">Dermatology</a> </li>
+								</ul>
+							</li>
+							<li class="nav-item <?php if($currentPage =='appointment'){echo 'active';}?>"> <a href="appointment.php" class="nav-link">Appointment</a> </li>
+							<li class="nav-item <?php if($currentPage =='contact'){echo 'active';}?>"> <a href="contact.php" class="nav-link">Contact Us</a> </li>
+							<li class="nav-item d-lg-none"> <a href="#" class="nav-link btn style1">Arabic</a> </li>
+						</ul>
+						<div class="other-options md-none">
+							<div class="option-item"> <a href="#" class="btn style1">Arabic</a> </div>
+						</div>
+					</div>
+				</nav>
+				<div class="mobile-bar-wrap">
+					<div class="mobile-menu d-lg-none"> <a href="javascript:void(0)"><i class="ri-menu-line"></i></a> </div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header Section End -->
+	<!-- Hero Section Start -->
+	<section class="hero-wrap style1">
+		<div class="hero-slider-one owl-carousel">
+			<div class="hero-slide-item"> <img src="assets/img/slider/1.jpg" class="desk w-100"><img src="assets/img/mob/1.jpg" class="mob w-100">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-xl-5 col-lg-6">
+							<div class="hero-content">
+								<h1 class="white">Smile  with Confidence</h1>
+								<p>Healthy Teeth, Beautiful Smiles. Your journey to oral health starts here.</p>
+								<div class="hero-btn"> <a href="dental-services.php" class="btn style1">Find Out More</a> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hero-slide-item"><img src="assets/img/slider/2.jpg" class="desk w-100"><img src="assets/img/mob/2.jpg" class="mob w-100">
+				<div class="container">
+					<div class="row align-items-center ">
+						<div class="col-xl-5 col-lg-6">
+							<div class="hero-content"> 
+								<h1 class="white">Your Skin, Our Priority</h1>
+								<p>Flawless Skin, Flawless Confidence. Achieve beauty, embrace confidence.</p>
+								<div class="hero-btn"> <a href="dermatology.php" class="btn style1">Find Out More</a> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hero-slide-item"><img src="assets/img/slider/3.jpg" class="desk w-100"><img src="assets/img/mob/3.jpg" class="mob w-100">
+				<div class="container">
+					<div class="row align-items-center ">
+						<div class="col-xl-5 col-lg-6">
+							<div class="hero-content">
+								<h1 class="white">Healthy Skin, Beautiful You</h1>
+								<p>Skin Solutions, Tailored for You. Personalized care for all your skin needs.</p>
+								<div class="hero-btn"> <a href="contact.php" class="btn style1">Find Out More</a> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+					<div class="hero-slide-item"><img src="assets/img/slider/4.jpg" class="desk w-100"><img src="assets/img/mob/4.jpg" class="mob w-100">
+				<div class="container">
+					<div class="row align-items-center ">
+						<div class="col-xl-5 col-lg-6">
+							<div class="hero-content">
+								<h1 class="white">Complete Health Care</h1>
+								<p>Revealing Your Natural Radiance. Customized treatments for a healthier, brighter you.</p>
+								<div class="hero-btn"> <a href="dermatology.php" class="btn style1">Find Out More</a> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero Section End -->
+	<!--about us-->
+	<section class="home-about sec-pad">
+		<div class="container-largee">
+			<div class="row">
+				<div class="col-xl-7 col-md-12">
+					<div class="home-about-content" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
+						<p class="first-para">At Art Clinic, we believe in providing top-notch medical and cosmetic services tailored to your unique needs. Our team of experienced professionals is dedicated to delivering the highest level of care, ensuring revitalized. </p>
+						<p>With a patient-first approach, we combine <b>advanced technologies</b> and personalized attention to help you achieve your aesthetic that every patient leaves feeling confident and health goals.</p>
+						<p>Our commitment to excellence is reflected in the variety of services we offer, ranging from dental care to dermatological treatments.</p>
+						<ul>
+							<li>We enhance your smile</li>
+							<li>Rejuvenate your skin</li>
+							<li>We ensure expert medical advice</li>
+						</ul>
+						<p>Your wellness journey is our priority, and we take pride in offering treatments that not only meet but exceed your expectations.</p>
+					</div>
+				</div>
+				<div class="col-xl-8 col-md-12">
+					<div class="about-box" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+						<div class="about-box-content">
+							<h5>Connect with Care</h5>
+							<p>Our commitment to excellence is reflected in the variety of services we offer, ranging from dental care to dermatological treatments.</p>
+						</div>
+						<div class="about-box-content"> <a href="appointment.php" class="btn style1">Appointment</a> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Service Section Start -->
+	<section class="service-wrap sec-pad">
+		<div class="container-largee">
+			<div class="section-title style1  "> <span>Our Services</span>
+				<h2>We're Providing <span> Best Care<span></h2> </div>
+			<div class="service-slider-one owl-carousel">
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Dental-fillings.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/Dentalfillings.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dental-services.php">Dental fillings</a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Dental-nerve-fillings.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/Dentalnervefillings.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dental-services.php">Dental nerve fillings</a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Cosmetic-dental-fillings.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/Cosmetic.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dental-services.php">Cosmetic dental fillings</a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Gum-treatments-and-surgery.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/Gumtreatments.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dental-services.php">Gum treatments and surgery</a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Dental-implants-and-cosmetics.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/dental-implant.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dental-services.php">Dental implants and cosmetics</a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Laser-teeth-whitening.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/Laser.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dental-services.php">Laser teeth whitening</a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Modern-celebrity-smile.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/celebrity.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dental-services.php">Modern celebrity smile</a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/orthodontics-of-all-kinds.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/Orthodontics.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dental-services.php">Orthodontics of all kinds</a></h3> </div>
+				</div>
+			</div>
+			<div class="service-slider-one owl-carousel">
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/botox.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/Lip.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dermatology.php">Botox </a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Filler.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/filler.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dermatology.php">Filler </a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Reginera-for-hair.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/Reginera.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dermatology.php">Reginera for hair </a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Hair-removal-for-men-and-women.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/Hair.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dermatology.php">Hair removal for men and women  </a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Tattoo-removal.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/Tattoo.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dermatology.php">Tattoo removal </a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Face-glasses-session-by-Derma-pin.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/glasses-100.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dermatology.php">Face glasses session By Derma</a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Cold-facial-peeling.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/peeling.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dermatology.php">Cold facial peeling</a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Lip-augmentation.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/Lip.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dermatology.php">Lip augmentation</a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/carbon-laser.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/carbon.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dermatology.php">Carbon laser</a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Face-or-eyebrow-bleaching.jpg" alt="Image"> <span class="service-icon"><<img src="assets/img/icons/eyebrow.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dermatology.php">Face or eyebrow bleaching</a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Hair-or-face-plasma.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/plasma.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dermatology.php">Hair or face plasma</a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Gummy-smile-treatment.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/celebrity"></span> </div>
+					<div class="service-info">
+						<h3><a href="dermatology.php">Gummy smile treatment</a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Profile-glasses.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/glasses-100.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dermatology.php">Profile glasses</a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Dark-circles-treatment.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/Dark.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dermatology.php">Dark circles treatment</a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Face-lift-threads.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/Face.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dermatology.php">Face lift threads </a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Normal-skin-cleansing.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/Normal.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dermatology.php">Normal skin cleansing </a></h3> </div>
+				</div>
+				<div class="service-card style1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+					<div class="service-img"> <img src="assets/img/services/Hydrafacial-skin-cleansing.jpg" alt="Image"> <span class="service-icon"><img src="assets/img/icons/Hydrafacial.png"></span> </div>
+					<div class="service-info">
+						<h3><a href="dermatology.php">Hydrafacial skin cleansing </a></h3> </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Service Section End -->
+	<section class="whychooseus ">
+		<div class="container-largee">
+			<div class="row justify-content-between ">
+				<div class="col-xl-6 col-md-12"> <img src="assets/img/home/whychooseus.jpg" class="w-100"> </div>
+				<div class="col-xl-5 col-md-12">
+					<h6>Why Choose Art Clinic ?</h6>
+					<p class="white"> The Traditional Healthcare system often requires:</p>
+					<ul class="why-items" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+						<li>Expert professionals delivering personalized care</li>
+						<li class="non">Comprehensive dental and dermatology services under one roof and aesthetic and medical solutions that enhance confidence</li>
+						<li class="non">Advanced technologies ensuring precise and effective treatments</li>
+						<li>Commitment to patient safety and comfort and apatient-centered approach that prioritizes your unique needs </li>
+						<li>For more advanced skincare solutions, we offer carbon laser treatments, face and eyebrow bleaching, and plasma therapies for hair and skin. </li>
+						<li>Our experts also provide gummy smile treatments, face-lifting threads, and dark circle treatments</li>
+						<li>We specialize in tattoo removal, Derma Pin face glasses sessions, cold facial peeling, and lip augmentation.</li>
+						<li class="one">Trust Art Clinic for all your dermatology needs, and experience a transformation like never before. </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--3 points--->
+	<section class="three-points sec-pad">
+		<div class="container-fluid">
+			<div class="row  ">
+				<div class="col-xl-4 col-md-12">
+					<div class="three-point-sec" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+						<div class="three-point-icon"> <span class="contact-icon">
+                                         <i class="flaticon-email-1"></i>
+                                    </span></div>
+						<div class="contact-info">
+							<h3>Emergency Contact</h3>
+							<p>Committed to providing exceptional healthcare services in Saudi Arabia.</p>
+							<h2>+966 9200 05446</h2> </div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-12">
+					<div class="three-point-sec one" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+						<div class="three-point-icon"> <span class="contact-icon">
+                                      <i class="flaticon-call"></i>
+                                    </span> </div>
+						<div class="contact-info">
+							<h3>Mail Us</h3>
+							<p>Feel free to reach out to us via email for assistance or feedback.</p>
+							<h2><a href="mailto:info@artclinicssa.com">info@artclinicssa.com</a></h2> </div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-12">
+					<div class="three-point-sec two" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+						<div class="three-point-icon"> <span class="contact-icon">
+                                        <i class="flaticon-map"></i>
+                                    </span> </div>
+						<div class="contact-info">
+							<h3>Our Timings</h3>
+							<p>We are available to ensure convenient access to quality care.</p>
+							<h2>Sat-Thu: 9AM-10PM   </h2> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!---whyus -->
+	<section class="whyus ">
+		<div class="container-largee">
+			<div class="row no-gutter">
+				<div class="col-xl-6 col-md-12">
+					<div class="whyus-content " data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+						<div class="section-title style1  "> <span>Connect with Care</span>
+							<h2><span>Glow with Confidence</span></h2> </div>
+						<p>Whether you have a question, need more information about our services, or want to schedule an appointment, our friendly team is here to assist you.</p>
+						<div class="option-item"> <a href="contact.php" class="btn style1">Reach Out</a> </div>
+					</div>
+					<div class="col-md-6"> </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!---testimnials --->
+	<section class="testimonials  ">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-10 col-lg-7 col-md-12">
+					<div class="section-title style1  ">
+						<h2 class="white">Innovative Care, Unmatched <br><span class="white">Excellence </span> </h2> </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-1 col-md-1">
+					<div class="quote-icon"> <i class="flaticon-quote-2"></i> </div>
+				</div>
+				<div class="col-xl-7 col-md-10">
+					<div class="testimonial-slider-one owl-carousel">
+						<div class="testimonial-card style3" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+							<p class="client-quote">Art Clinic gave me the smile I always dreamed of. The care and expertise were beyond my expectations. The dental implants were life-changing. I can smile freely again and feel great about it.</p>
+							<div class="client-info-area">
+								<div class="client-info-wrap">
+									<div class="client-info">
+										<h3>-Abbas Favad</h3> </div>
+								</div>
+							</div>
+						</div>
+						<div class="testimonial-card style3" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+							<p class="client-quote">I took skincare to hair treatments, Art Clinic has completely transformed my appearance and boosted my confidence. Now I feel more confident than ever and all thanks to the team of Art Clinics.</p>
+							<div class="client-info-area">
+								<div class="client-info-wrap">
+									<div class="client-info">
+										<h3>-Alena Jolie</h3> </div>
+								</div>
+							</div>
+						</div>
+						<div class="testimonial-card style3" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+							<p class="client-quote">Art Clinic gave me the smile I always dreamed of. The care and expertise were beyond my expectations. The dental implants were life-changing. I can smile freely again and feel great about it.</p>
+							<div class="client-info-area">
+								<div class="client-info-wrap">
+									<div class="client-info">
+										<h3>-Akash Chopra</h3> </div>
+								</div>
+							</div>
+						</div>
+						<div class="testimonial-card style3" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+							<p class="client-quote">Art Clinic gave me the smile I always dreamed of. The care and expertise were beyond my expectations I had Botox for my forehead and the results were incredible. I feel more confident than ever.</p>
+							<div class="client-info-area">
+								<div class="client-info-wrap">
+									<div class="client-info">
+										<h3>-Anush Jain</h3> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer Section Start -->
+<footer class="footer-wrap">
+	<div class="container-largee">
+		<div class="row footer-top">
+			<div class="col-xl-3 col-lg-5 col-md-6 col-sm-12">
+				<div class="footer-widget">
+					<a href="index.php" class="footer-logo"> <img src="assets/img/Footer.png" alt="Image"> </a>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-4 col-md-6 col-7">
+				<div class="footer-widget" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+					<h3 class="footer-widget-title">Working Time</h3>
+					<ul class="footer-menu list-style">
+						<li> <a href="#">Saturday-Thursday: 9AM-10PM</a> </li>
+						<li> <a href="#">Friday: Closed</a> </li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-5 col-md-6 col-5 pe-xl-4">
+				<div class="footer-widget" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+					<h3 class="footer-widget-title">Services</h3>
+					<ul class="footer-menu list-style">
+						<li><a href="dental-services.php">Dental service </a> </li>
+						<li> <a href="dermatology.php">Dermatology</a> </li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-7 col-md-6 col-sm-6">
+				<div class="footer-widget" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+					<h3 class="footer-widget-title">Official Info</h3>
+					<ul class="contact-info list-style">
+						<li> <i class="flaticon-map"></i>
+							<h6>Al Mubarraz Branch</h6>
+							<p>AL MUBARRAZ city, As Salam 1st Dist, Kingdom of Saudi Arabia.</p>
+						</li>
+						<li> <i class="flaticon-map"></i>
+							<h6>Al Hafuf Branch</h6>
+							<p>Al Hafuf, Alhamra dist, king Abdullah street southen</p>
+						</li>
+						<li> <i class="flaticon-email-1"></i>
+							<h6>Email</h6> <a href="mailto:info@artclinicssa.com">info@artclinicssa.com</a> </li>
+						<li> <i class="flaticon-phone-call-1"></i>
+							<h6>Phone</h6> <a href="tel:966920005446">+966 9200 05446</a> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container-largee">
+			<div class="row ">
+				<div class="col-xl-5 col-md-12">
+					<div class="footer-points">
+						<ul class="foot-list">
+							<li><a href="index.php">Home</a></li>
+							<li><a href="about.php">About</a></li>
+							<li><a href="appointment.php">Appointment</a></li>
+							<li><a href="contact.php">Get In Touch</a></li>
+							<li><a href="#">Arabic</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-7 col-md-12">
+					<p class="copyright-text"> © Copyright 2024 Art Clinic. All Rights Reserved. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Footer Section End -->
+</div>
+<!-- Page Wrapper End -->
+<!-- Back-to-top button Start -->
+<a href="javascript:void(0)" class="back-to-top bounce"><i class="ri-arrow-up-s-line"></i></a>
+<a href="https://api.whatsapp.com/send?phone=0557888076" class="float-whats" target="_blank"> <i class="fa fa-whatsapp"></i> </a>
+<!-- Back-to-top button End -->
+<!-- Link of JS files -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/form-validator.min.js"></script>
+<script src="assets/js/contact-form-script.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.appear.js"></script>
+<script src="assets/js/odometer.min.js"></script>
+<script src="assets/js/fslightbox.js"></script>
+<script src="assets/js/tweenmax.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

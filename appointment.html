@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Link of CSS files -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/flaticon.css">
+	<link rel="stylesheet" href="assets/css/remixicon.css">
+	<link rel="stylesheet" href="assets/css/fontawesome.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/odometer.min.css">
+	<link rel="stylesheet" href="assets/css/aos.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<link rel="stylesheet" href="assets/css/dark-theme.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+	<title>Art Clinic</title>
+	<meta name="description" content="At Art Clinic, we are committed to enhancing your dental health and aesthetics through a range of specialized treatments. From routine dental fillings to advanced cosmetic procedures, our goal is to create a healthy, beautiful smile. We offer expert dental nerve fillings to restore tooth function, and our cosmetic dental fillings are designed to seamlessly blend with your natural teeth. ">
+	<meta name="keywords" content="Art Clinic ">
+	<meta property="og:title" content="Art Clinic" />
+	<meta property="og:description" content="At Art Clinic, we are committed to enhancing your dental health and aesthetics through a range of specialized treatments. From routine dental fillings to advanced cosmetic procedures, our goal is to create a healthy, beautiful smile. We offer expert dental nerve fillings to restore tooth function, and our cosmetic dental fillings are designed to seamlessly blend with your natural teeth. ">
+	<link rel="icon" type="image/png" href="assets/img/Fav.png">
+	</head>
+
+<body>
+<!-- Page Wrapper End -->
+<div class="page-wrapper">
+	<!-- Header Section Start -->
+	<header class="header-wrap style1">
+		<div class="header-bottom">
+			<div class="container-fluid">
+				<nav class="navbar navbar-expand-md navbar-light">
+					<a class="navbar-brand" href="index.php"> <img class="logo-light" src="assets/img/Header.png" alt="logo"> </a>
+					<div class="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
+						<div class="menu-close d-lg-none">
+							<a href="javascript:void(0)"> <i class="ri-close-line"></i></a>
+						</div>
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item <?php if($currentPage =='home'){echo 'active';}?>"> <a href="index.php" class="nav-link ">Home</a> </li>
+							<li class="nav-item <?php if($currentPage =='about'){echo 'active';}?>"> <a href="about.php" class="nav-link"> About</a> </li>
+							<li class="nav-item <?php if($currentPage =='services'){echo 'active';}?>"> <a href="#" class="nav-link">Services<i class="ri-arrow-down-s-line"></i></a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"> <a href="dental-services.php" class="nav-link">Dental service </a> </li>
+									<li class="nav-item"> <a href="dermatology.php" class="nav-link">Dermatology</a> </li>
+								</ul>
+							</li>
+							<li class="nav-item <?php if($currentPage =='appointment'){echo 'active';}?>"> <a href="appointment.php" class="nav-link">Appointment</a> </li>
+							<li class="nav-item <?php if($currentPage =='contact'){echo 'active';}?>"> <a href="contact.php" class="nav-link">Contact Us</a> </li>
+							<li class="nav-item d-lg-none"> <a href="#" class="nav-link btn style1">Arabic</a> </li>
+						</ul>
+						<div class="other-options md-none">
+							<div class="option-item"> <a href="#" class="btn style1">Arabic</a> </div>
+						</div>
+					</div>
+				</nav>
+				<div class="mobile-bar-wrap">
+					<div class="mobile-menu d-lg-none"> <a href="javascript:void(0)"><i class="ri-menu-line"></i></a> </div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header Section End -->
+	<!-- Breadcrumb Start -->
+	<div class="breadcrumb-wrap bg-f br-2">
+		<div class="container">
+			<div class="breadcrumb-title">
+				<h2> Appointment</h2>
+				<ul class="breadcrumb-menu list-style">
+					<li><a href="index.php">Home</a></li>
+					<li> Appointment</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Breadcrumb End -->
+	<!-- Appointment section Start -->
+	<section class="appointment-form-wrap sec-pad " data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+					<form action="#" method="POST" class="book-appointment-form">
+						<div class="head-title text-center">
+							<h2><span>Your Journey to Health Starts Here</span></h2> </div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" name="name" placeholder="Name" required> </div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="email" name="email" placeholder="Email" required> </div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="number" name="phone" placeholder="Phone Number" required> </div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="date" name="appointment_date" required> </div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-12">
+								<div class="form-group">
+									<select name="select_service" required>
+										<option value="">Select Service</option>
+										<option value="Dental">Dental Services</option>
+										<option value="Dermatology">Dermatology Services</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<select name="select_time" required>
+										<option value="">Select Time</option>
+										<option value="10:00 AM">10:00 AM</option>
+										<option value="11:00 AM">12:00 AM</option>
+										<option value="12:00 PM">02:00 PM</option>
+										<option value="12:00 PM">04:00 PM</option>
+										<option value="12:00 PM">06:00 PM</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="text" name="message" placeholder="Message"> </div>
+							</div>
+							<div class="col-md-3 col-12">
+								<button type="submit" class="btn style1 d-block w-100 text-center">Book Now</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- Footer Section Start -->
+<footer class="footer-wrap">
+	<div class="container-largee">
+		<div class="row footer-top">
+			<div class="col-xl-3 col-lg-5 col-md-6 col-sm-12">
+				<div class="footer-widget">
+					<a href="index.php" class="footer-logo"> <img src="assets/img/Footer.png" alt="Image"> </a>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-4 col-md-6 col-7">
+				<div class="footer-widget" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+					<h3 class="footer-widget-title">Working Time</h3>
+					<ul class="footer-menu list-style">
+						<li> <a href="#">Saturday-Thursday: 9AM-10PM</a> </li>
+						<li> <a href="#">Friday: Closed</a> </li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-5 col-md-6 col-5 pe-xl-4">
+				<div class="footer-widget" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+					<h3 class="footer-widget-title">Services</h3>
+					<ul class="footer-menu list-style">
+						<li><a href="dental-services.php">Dental service </a> </li>
+						<li> <a href="dermatology.php">Dermatology</a> </li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-7 col-md-6 col-sm-6">
+				<div class="footer-widget" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+					<h3 class="footer-widget-title">Official Info</h3>
+					<ul class="contact-info list-style">
+						<li> <i class="flaticon-map"></i>
+							<h6>Al Mubarraz Branch</h6>
+							<p>AL MUBARRAZ city, As Salam 1st Dist, Kingdom of Saudi Arabia.</p>
+						</li>
+						<li> <i class="flaticon-map"></i>
+							<h6>Al Hafuf Branch</h6>
+							<p>Al Hafuf, Alhamra dist, king Abdullah street southen</p>
+						</li>
+						<li> <i class="flaticon-email-1"></i>
+							<h6>Email</h6> <a href="mailto:info@artclinicssa.com">info@artclinicssa.com</a> </li>
+						<li> <i class="flaticon-phone-call-1"></i>
+							<h6>Phone</h6> <a href="tel:966920005446">+966 9200 05446</a> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container-largee">
+			<div class="row ">
+				<div class="col-xl-5 col-md-12">
+					<div class="footer-points">
+						<ul class="foot-list">
+							<li><a href="index.php">Home</a></li>
+							<li><a href="about.php">About</a></li>
+							<li><a href="appointment.php">Appointment</a></li>
+							<li><a href="contact.php">Get In Touch</a></li>
+							<li><a href="#">Arabic</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-7 col-md-12">
+					<p class="copyright-text"> © Copyright 2024 Art Clinic. All Rights Reserved. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Footer Section End -->
+</div>
+<!-- Page Wrapper End -->
+<!-- Back-to-top button Start -->
+<a href="javascript:void(0)" class="back-to-top bounce"><i class="ri-arrow-up-s-line"></i></a>
+<a href="https://api.whatsapp.com/send?phone=0557888076" class="float-whats" target="_blank"> <i class="fa fa-whatsapp"></i> </a>
+<!-- Back-to-top button End -->
+<!-- Link of JS files -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/form-validator.min.js"></script>
+<script src="assets/js/contact-form-script.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.appear.js"></script>
+<script src="assets/js/odometer.min.js"></script>
+<script src="assets/js/fslightbox.js"></script>
+<script src="assets/js/tweenmax.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
