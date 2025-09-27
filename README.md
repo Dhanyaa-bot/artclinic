@@ -10,4 +10,4 @@ A modern and responsive website for a KSA-based hospital, showcasing healthcare 
 ---
 
 ## 🌐 Live Demo  
-[Click here to view the live site]([https://dhanyaa-bot.github.io/artclinic/])  
+https://dhanyaa-bot.github.io/artclinic/
